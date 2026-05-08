@@ -225,7 +225,3 @@ The workflow can generate:
 - Keep project-level setup, package loading, and data-loading paths in `serialPlotter_384.R`.
 - Avoid adding new analysis logic directly to the entry script unless it is global setup.
 - Prefer relative paths for future portability; the current script preserves the original absolute data paths.
-
-## Verification
-
-The refactor was checked by parsing every R file and sourcing `R/_source_functions.R`. This confirms that all modular function files are syntactically valid and can be loaded without running the full data-loading script.
